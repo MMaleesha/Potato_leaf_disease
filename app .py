@@ -22,7 +22,7 @@ st.set_page_config(
 IMAGE_SIZE = 256
 CLASS_NAMES = ['Bacteria', 'Fungi', 'Healthy', 'Nematode', 'Pest', 'Phytopthora', 'Virus']
 MODEL_PATH = "vgg16_model_v1.keras"
-MODEL_DISPLAY_NAME = "vgg16"
+MODEL_DISPLAY_NAME = "Vgg16"
 
 # Recorded test-set results from model evaluation during development
 # (shown on the About page for context on why this model was chosen)
