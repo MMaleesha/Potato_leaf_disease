@@ -27,9 +27,9 @@ MODEL_DISPLAY_NAME = "VGG16"
 # Recorded test-set results from model evaluation during development
 # (shown on the About page for context on why this model was chosen)
 MODEL_RESULTS = {
-    "Custom CNN": 54.41,
-    "VGG16": 69.28,
-    "MobileNetV2": 81.37,
+    "Custom CNN": 35.24,
+    "VGG16": 72.27,
+    "MobileNetV2": 58.08,
 }
 
 # ===========================================================
@@ -393,7 +393,7 @@ elif page == "ℹ️ About":
     
     VGG16 achieved the highest test accuracy while remaining lightweight enough for fast,
     responsive predictions in this dashboard — making it the clear choice for deployment over the
-    Custom CNN and MobileNetv2 alternatives.
+    Custom CNN and MobileNetV2 alternatives.
 
     **Disclaimer**
     This tool is intended to assist with preliminary screening only and should not replace
