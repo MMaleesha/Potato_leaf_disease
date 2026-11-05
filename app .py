@@ -21,8 +21,8 @@ st.set_page_config(
 # ===========================================================
 IMAGE_SIZE = 256
 CLASS_NAMES = ['Bacteria', 'Fungi', 'Healthy', 'Nematode', 'Pest', 'Phytopthora', 'Virus']
-MODEL_PATH = "mobilenet_v2_model_v1.keras"
-MODEL_DISPLAY_NAME = "MobileNetV2 (Transfer Learning)"
+MODEL_PATH = "vgg16_model_v1.keras"
+MODEL_DISPLAY_NAME = "vgg16"
 
 # Recorded test-set results from model evaluation during development
 # (shown on the About page for context on why this model was chosen)
@@ -208,7 +208,7 @@ page = st.sidebar.radio("Navigate", ["🔍 Detect Disease", "📚 Disease Librar
 
 st.sidebar.markdown("---")
 st.sidebar.caption(f"Model: {MODEL_DISPLAY_NAME}")
-st.sidebar.caption(f"Test accuracy: {MODEL_RESULTS['MobileNetV2']}%")
+st.sidebar.caption(f"Test accuracy: {MODEL_RESULTS['Vgg16']}%")
 st.sidebar.caption(f"Classes: {', '.join(CLASS_NAMES)}")
 
 if model_load_error:
@@ -221,7 +221,7 @@ if page == "🔍 Detect Disease":
     st.title("🔍 Detect Potato Leaf Disease")
     st.write("Upload a photo of a potato leaf to identify whether it's healthy or affected by a disease, "
              "along with recommended treatment and prevention steps.")
-    st.caption(f"Powered by {MODEL_DISPLAY_NAME} — {MODEL_RESULTS['MobileNetV2']}% test accuracy")
+    st.caption(f"Powered by {MODEL_DISPLAY_NAME} — {MODEL_RESULTS['Vgg16']}% test accuracy")
 
     if model_load_error:
         st.error(f"The model could not be loaded: {model_load_error}\n\n"
