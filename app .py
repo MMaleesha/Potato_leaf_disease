@@ -377,7 +377,7 @@ elif page == "ℹ️ About":
     4. The dashboard provides relevant symptoms, causes, treatment, and prevention guidance
        based on the prediction.
 
-    **Why MobileNetV2?**
+    **Why VGG16?**
     Three architectures were evaluated on the same test set during development:
     """)
 
@@ -390,9 +390,10 @@ elif page == "ℹ️ About":
     st.dataframe(results_df, use_container_width=True)
 
     st.markdown("""
-    MobileNetV2 achieved the highest test accuracy while remaining lightweight enough for fast,
+    
+    VGG16 achieved the highest test accuracy while remaining lightweight enough for fast,
     responsive predictions in this dashboard — making it the clear choice for deployment over the
-    Custom CNN and VGG16 alternatives.
+    Custom CNN and MobileNetv2 alternatives.
 
     **Disclaimer**
     This tool is intended to assist with preliminary screening only and should not replace
